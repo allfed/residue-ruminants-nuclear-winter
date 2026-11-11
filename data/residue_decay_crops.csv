@@ -1,0 +1,23 @@
+# RUSLE2 decomposition coefficient (per day) of each counted crop, from the closest RUSLE2 crop.
+# USDA-ARS (2013), RUSLE2 Science Documentation, Table 10.3.
+crop_code,residue,rusle2_crop,phi_per_day
+WHEA,wheat straw,wheat,0.008
+BARL,barley straw,wheat,0.008
+RICE,rice straw,wheat,0.008
+OCER,straw of the group's members,wheat,0.008
+SORG,sorghum stover,sorghum,0.016
+MILL,millet stover,sorghum,0.016
+PMIL,pearl millet stover,sorghum,0.016
+MAIZ,maize stover,corn,0.016
+SUGC,sugarcane tops,corn,0.016
+OILP,oil palm fronds,corn,0.016
+SOYB,soybean straw,soybeans,0.02
+BEAN,bean straw,soybeans,0.02
+CHIC,chickpea straw,soybeans,0.02
+LENT,lentil straw,soybeans,0.02
+OPUL,straw of the group's members,soybeans,0.02
+COWP,cowpea haulms,alfalfa,0.015
+GROU,groundnut haulms,alfalfa,0.015
+SUNF,sunflower stover,cotton,0.015
+RAPE,rape straw,cotton,0.015
+OOIL,straw of the group's members,cotton,0.015

@@ -1,0 +1,76 @@
+Feeding ruminants unused crop residues to free grain for people in abrupt sunlight reduction scenarios:
+code and data
+
+The code in this repository, and the data derived by the authors, are licensed under the Apache License 2.0
+(see LICENSE). The data and values taken or derived from the third-party sources below are NOT relicensed:
+they remain under the terms of their sources. Unless stated otherwise, what this repository holds of each
+source is aggregated to countries or regions, or otherwise derived, by the authors; the sources' original
+files are not redistributed.
+
+Crop production under the nuclear-winter scenarios (data/drivers/crops_*Tg.npz)
+  Crop-model simulations of Blouin et al. (2025), no crop relocation.
+
+Pasture production and climate of the scenarios (data/drivers/grass_*Tg.csv, data/cold_deficit.npz,
+data/decay_temperature.npz)
+  Derived from the climate and pasture simulations of Xia, L., et al. (2022). Global food insecurity and
+  famine from reduced crop, marine fishery and livestock production due to climate disruption from nuclear
+  war soot injection. Nature Food 3, 586-596. https://doi.org/10.1038/s43016-022-00573-0. Data at
+  https://osf.io/yrbse/. Country-level ratios and monthly means only.
+
+MapSPAM 2020 (data/crop_yield.csv, data/residue_access.csv, data/residue_access_crops.npz,
+data/residue_calendar.csv, data/map_context/maps_05deg.npz)
+  International Food Policy Research Institute (IFPRI). 2024. Global Spatially-Disaggregated Crop Production
+  Statistics Data for 2020 Version 1.0.0. https://doi.org/10.7910/DVN/SWPENT. Harvard Dataverse. Version 3.
+  CC BY 4.0.
+  This data was provided by the International Food Policy Research Institute (IFPRI). IFPRI bears no
+  responsibility for the analyses or interpretations of the data presented here.
+
+FAOSTAT (data/drivers/animal_baseline.csv, data/ruminant_herds.csv, data/grain_feed.csv)
+  FAO. 2025. FAOSTAT: Crops and livestock products. Accessed on 23 December 2025.
+  FAO. 2026. FAOSTAT: Food Balances. Accessed on 9 November 2026.
+  https://www.fao.org/faostat/en/#data. Licence: CC-BY-4.0. FAO does not endorse this work.
+
+Gridded Livestock of the World (data/grass_climate.csv, data/cold_deficit.npz, data/residue_access.csv, data/residue_access_crops.npz, data/map_context/maps_05deg.npz)
+  FAO. 2024. Gridded livestock density (Global - 2020 - 10 km), GLW4.
+  https://data.apps.fao.org/catalog/dataset/9d1e149b-d63f-4213-978b-317a8eb42d02. CC BY 4.0. FAO does not
+  endorse this work.
+
+Cereal residue production and uses (data/benchmark_smerald.csv, data/residue_reserve.csv,
+results/residue_benchmark.csv)
+  Smerald, A. (2023). Global crop residue management dataset (1997-2021). Karlsruhe Institute of Technology.
+  https://doi.org/10.35097/989. CC BY 4.0. Values averaged over 2019 to 2021; regional shares aggregated by
+  the authors.
+
+Feed values (data/residue_feed_values.csv, data/stream_properties.csv, data/protein_streams.csv,
+data/protein_residues.csv)
+  Metabolizable energy, crude protein, NDF and protein degradability are taken or derived from Feedipedia, a
+  programme by INRAE, CIRAD, AFZ and FAO (https://www.feedipedia.org), acknowledged as source and copyright
+  holder. Feedipedia allows extracts for research and non-commercial use; these values are not licensed under
+  the Apache License 2.0.
+
+Rations (data/stream_properties.csv)
+  Dry-matter shares of the rations derived from Mottet, A., et al. (2017). Livestock: On our plates or eating
+  at our table? A new analysis of the feed/food debate. Global Food Security 14, 1-8, Supplementary
+  Information 4 to 9, aggregated to six herds by the authors.
+
+Crop calendars (data/residue_calendar.csv, data/residue_clearing.npz)
+  Harvest and planting timing derived from the crop calendar dataset of Sacks, W.J., et al. (2010). Crop
+  planting dates: an analysis of global patterns. Global Ecology and Biogeography 19, 607-620.
+
+Present climate (data/grass_climate.csv)
+  The share of each herd in a temperate climate is computed from WorldClim 2.1 (Fick and Hijmans, 2017). No WorldClim data are redistributed.
+
+Population (data/population.csv)
+  United Nations, Department of Economic and Social Affairs, Population Division (2024). World Population
+  Prospects 2024, Online Edition. CC BY 3.0 IGO.
+
+Country boundaries (data/map_context/countries.geojson)
+  Made with Natural Earth (public domain), simplified for plotting.
+
+United States Department of Agriculture (data/grain_feed.csv, data/stream_properties.csv,
+data/residue_decay_crops.csv)
+  Production, Supply and Distribution database; FoodData Central; RUSLE2 science documentation (2013). Public
+  domain.
+
+Individual coefficients from the literature (NRC, IPCC and the papers cited in the paper's Methods and
+Supplementary Material) are given with their source in the code and data files.

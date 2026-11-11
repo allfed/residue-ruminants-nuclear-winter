@@ -1,0 +1,14 @@
+name: residue-ruminants
+channels: [conda-forge]
+dependencies:
+  - python=3.12.14
+  - pip=26.2.1
+  - pip:
+      - numpy==2.2.2
+      - pandas==2.2.3
+      - scipy==1.15.2
+      - matplotlib==3.10.0
+      - pytest==8.3.4
+      - pytest-xdist==3.8.0
+      - rasterio==1.5.1
+      - geopandas==1.1.4

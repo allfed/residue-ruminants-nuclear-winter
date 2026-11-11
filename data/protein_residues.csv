@@ -1,0 +1,43 @@
+crop_code,rdp_fraction,rup_digestibility,representative
+BANA,0.0,0.0,not counted
+BARL,0.46,0.65,Barley straw
+BEAN,0.45,0.65,"Maize stover, dry"
+CASS,0.0,0.0,not counted
+CHIC,0.45,0.65,"Maize stover, dry"
+CITR,0.0,0.0,not counted
+CNUT,0.0,0.0,not counted
+COCO,0.0,0.0,not counted
+COFF,0.0,0.0,not counted
+COWP,0.58,0.65,"Cowpea (Vigna unguiculata), hay"
+GROU,0.58,0.65,"Cowpea (Vigna unguiculata), hay"
+LENT,0.7,0.65,Lentil straw
+MAIZ,0.45,0.65,"Maize stover, dry"
+MILL,0.51,0.65,Wheat straw
+OCER,0.51,0.65,Wheat straw
+OILP,0.51,0.65,Wheat straw
+ONIO,0.0,0.0,not counted
+OOIL,0.51,0.65,Wheat straw
+OPUL,0.58,0.65,"Cowpea (Vigna unguiculata), hay"
+ORTS,0.0,0.0,not counted
+PIGE,0.0,0.0,not counted
+PLNT,0.0,0.0,not counted
+PMIL,0.51,0.65,Wheat straw
+POTA,0.0,0.0,not counted
+RAPE,0.51,0.65,Wheat straw
+RCOF,0.0,0.0,not counted
+REST,0.0,0.0,not counted
+RICE,0.43,0.65,Rice straw
+SESA,0.0,0.0,not counted
+SORG,0.45,0.65,"Maize stover, dry"
+SOYB,0.32,0.65,Soybean straw
+SUGB,0.0,0.0,not counted
+SUGC,0.4,0.65,"Sugarcane tops, fresh"
+SUNF,0.45,0.65,"Maize stover, dry"
+SWPO,0.0,0.0,not counted
+TEAS,0.0,0.0,not counted
+TEMF,0.0,0.0,not counted
+TOMA,0.0,0.0,not counted
+TROF,0.0,0.0,not counted
+VEGE,0.0,0.0,not counted
+WHEA,0.51,0.65,Wheat straw
+YAMS,0.0,0.0,not counted

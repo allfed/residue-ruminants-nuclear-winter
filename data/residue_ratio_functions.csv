@@ -1,0 +1,73 @@
+# Grain-to-residue functions per crop code and member (weight: share of the group's world production).
+# Forms, with Y the fresh grain yield in Mg per ha: ipcc, slope p1 + intercept p2 / (Y dm_product);
+# exponential, p1 exp(-p2 Y), levelling off above Y = 1/p2; log, -p1 ln(Y) + p2; linear, p1 - p2 Y;
+# constant, p1. The source column gives each function's reference. Evaluated per country and year by
+# src/model/ratios.py.
+crop_code,member,weight,source,form,p1,p2,yield_basis,dm_product
+WHEA,WHEA,1.0,IPCC 2006 Vol 4 Ch 11 Table 11.2,ipcc,1.51,0.52,dry,0.89
+WHEA,WHEA,1.0,"Bentsen, Felby & Thorsen 2014",exponential,2.186,0.127,fresh,0.89
+WHEA,WHEA,1.0,"Scarlat, Martinov & Dallemand 2010",log,0.3629,1.6057,fresh,0.89
+WHEA,WHEA,1.0,Fischer et al. 2007,linear,1.96,0.14,fresh,0.89
+RICE,RICE,1.0,IPCC 2006 Vol 4 Ch 11 Table 11.2,ipcc,0.95,2.46,dry,0.89
+RICE,RICE,1.0,"Bentsen, Felby & Thorsen 2014",exponential,2.45,0.084,fresh,0.89
+RICE,RICE,1.0,"Scarlat, Martinov & Dallemand 2010",log,1.2256,3.845,fresh,0.89
+RICE,RICE,1.0,Fischer et al. 2007,linear,2.56,0.22,fresh,0.89
+MAIZ,MAIZ,1.0,IPCC 2006 Vol 4 Ch 11 Table 11.2,ipcc,1.03,0.61,dry,0.87
+MAIZ,MAIZ,1.0,"Bentsen, Felby & Thorsen 2014",exponential,2.656,0.103,fresh,0.87
+MAIZ,MAIZ,1.0,"Scarlat, Martinov & Dallemand 2010",log,0.1807,1.3373,fresh,0.87
+MAIZ,MAIZ,1.0,Fischer et al. 2007,linear,2.2,0.13,fresh,0.87
+BARL,BARL,1.0,IPCC 2006 Vol 4 Ch 11 Table 11.2,ipcc,0.98,0.59,dry,0.89
+BARL,BARL,1.0,"Bentsen, Felby & Thorsen 2014",exponential,1.822,0.149,fresh,0.89
+BARL,BARL,1.0,"Scarlat, Martinov & Dallemand 2010",log,0.2751,1.3796,fresh,0.89
+BARL,BARL,1.0,Fischer et al. 2007,linear,2.77,0.27,fresh,0.89
+SORG,SORG,1.0,IPCC 2006 Vol 4 Ch 11 Table 11.2,ipcc,0.88,1.33,dry,0.89
+SORG,SORG,1.0,Ronzon & Piotrowski 2017,exponential,2.302,0.1,fresh,0.89
+SORG,SORG,1.0,Fischer et al. 2007,linear,4.55,0.55,fresh,0.89
+MILL,MILL,1.0,IPCC 2006 Vol 4 Ch 11 Table 11.2,ipcc,1.43,0.14,dry,0.9
+MILL,MILL,1.0,Smerald et al. 2023 Table 2 exponential,exponential,1.9,0.25,fresh,0.9
+MILL,MILL,1.0,Smerald et al. 2023 Table 2 linear,linear,4.38,0.95,fresh,0.9
+PMIL,PMIL,1.0,IPCC 2006 Vol 4 Ch 11 Table 11.2,ipcc,1.43,0.14,dry,0.9
+PMIL,PMIL,1.0,Smerald et al. 2023 Table 2 exponential,exponential,1.9,0.25,fresh,0.9
+PMIL,PMIL,1.0,Smerald et al. 2023 Table 2 linear,linear,4.38,0.95,fresh,0.9
+SOYB,SOYB,1.0,IPCC 2006 Vol 4 Ch 11 Table 11.2,ipcc,0.93,1.35,dry,0.91
+SOYB,SOYB,1.0,IPCC 2006 Vol 4 Ch 11 Table 11.2 footnote f,constant,1.9,,fresh,0.91
+SOYB,SOYB,1.0,"Bentsen, Felby & Thorsen 2014",exponential,3.869,0.178,fresh,0.91
+SOYB,SOYB,1.0,Fischer et al. 2007,linear,3.9,0.8,fresh,0.91
+BEAN,BEAN,1.0,"IPCC 2006 Vol 4 Ch 11 Table 11.2, 'Dry bean'",ipcc,0.36,0.68,dry,0.9
+BEAN,BEAN,1.0,IPCC 2006 Vol 4 Ch 11 Table 11.2 footnote g,constant,1.6,,fresh,0.9
+BEAN,BEAN,1.0,Ronzon & Piotrowski 2017,exponential,3.232,0.3,fresh,0.9
+GROU,GROU,1.0,"IPCC 2006 Vol 4 Ch 11 Table 11.2, 'Peanut",ipcc,1.07,1.54,dry,0.94
+RAPE,RAPE,1.0,Ronzon & Piotrowski 2017,exponential,3.028,0.2,fresh,0.873
+RAPE,RAPE,1.0,"Scarlat, Martinov & Dallemand 2010",log,0.452,3.2189,fresh,0.873
+SUNF,SUNF,1.0,Ronzon & Piotrowski 2017,exponential,2.58,0.2,fresh,0.9
+SUNF,SUNF,1.0,"Scarlat, Martinov & Dallemand 2010",log,1.1097,3.2189,fresh,0.9
+SUNF,SUNF,1.0,Fischer et al. 2007,linear,3.85,0.7,fresh,0.9
+OCER,oats,0.3610271903323262,IPCC 2006 Vol 4 Ch 11 Table 11.2,ipcc,0.91,0.89,dry,0.89
+OCER,oats,0.3610271903323262,"Scarlat, Martinov & Dallemand 2010",log,0.1874,1.3002,fresh,0.89
+OCER,oats,0.3610271903323262,Fischer et al. 2007,linear,2.7,0.2,fresh,0.89
+OCER,oats,0.3610271903323262,Ronzon & Piotrowski 2017,exponential,1.868,0.25,fresh,0.89
+OCER,rye,0.2129909365558912,IPCC 2006 Vol 4 Ch 11 Table 11.2,ipcc,1.09,0.88,dry,0.89
+OCER,rye,0.2129909365558912,Ronzon & Piotrowski 2017,exponential,1.964,0.25,fresh,0.89
+OCER,rye,0.2129909365558912,"Scarlat, Martinov & Dallemand 2010",log,0.3007,1.5142,fresh,0.89
+OCER,rye,0.2129909365558912,Fischer et al. 2007,linear,2.7,0.2,fresh,0.89
+OCER,triticale,0.21903323262839877,IPCC 2006 Vol 4 Ch 11 Table 11.2,ipcc,1.51,0.52,dry,0.89
+OCER,triticale,0.21903323262839877,"Bentsen, Felby & Thorsen 2014",exponential,2.186,0.127,fresh,0.89
+OCER,triticale,0.21903323262839877,"Scarlat, Martinov & Dallemand 2010",log,0.3629,1.6057,fresh,0.89
+OCER,triticale,0.21903323262839877,Fischer et al. 2007,linear,1.96,0.14,fresh,0.89
+OCER,triticale,0.21903323262839877,IPCC 2006 Vol 4 Ch 11 Table 11.2,ipcc,1.09,0.88,dry,0.89
+OCER,triticale,0.21903323262839877,Ronzon & Piotrowski 2017,exponential,1.964,0.25,fresh,0.89
+OCER,triticale,0.21903323262839877,"Scarlat, Martinov & Dallemand 2010",log,0.3007,1.5142,fresh,0.89
+OCER,triticale,0.21903323262839877,Fischer et al. 2007,linear,2.7,0.2,fresh,0.89
+OCER,other cereals,0.20694864048338366,IPCC 2006 Vol 4 Ch 11 Table 11.2,ipcc,0.91,0.89,dry,0.89
+OCER,other cereals,0.20694864048338366,"Scarlat, Martinov & Dallemand 2010",log,0.1874,1.3002,fresh,0.89
+OCER,other cereals,0.20694864048338366,Fischer et al. 2007,linear,2.7,0.2,fresh,0.89
+OCER,other cereals,0.20694864048338366,Ronzon & Piotrowski 2017,exponential,1.868,0.25,fresh,0.89
+OPUL,peas,0.5348837209302326,Ronzon & Piotrowski 2017,exponential,3.644,0.3,fresh,0.91
+OPUL,broad beans,0.22480620155038758,IPCC 2006 Vol 4 Ch 11 Table 11.2 footnote b,constant,2.0,,fresh,0.91
+OPUL,broad beans,0.22480620155038758,Ronzon & Piotrowski 2017,exponential,3.644,0.3,fresh,0.91
+OPUL,other pulses,0.24031007751937986,IPCC 2006 Vol 4 Ch 11 Table 11.2 footnote b,constant,2.0,,fresh,0.91
+OPUL,other pulses,0.24031007751937986,Ronzon & Piotrowski 2017,exponential,3.644,0.3,fresh,0.91
+OOIL,linseed,0.0953757225433526,Ronzon & Piotrowski 2017,exponential,3.028,0.2,fresh,0.873
+OOIL,linseed,0.0953757225433526,"Scarlat, Martinov & Dallemand 2010",log,0.452,3.2189,fresh,0.873
+OOIL,"mustard, safflower, other oilseeds",0.23699421965317916,Ronzon & Piotrowski 2017,exponential,3.028,0.2,fresh,0.873
+OOIL,"mustard, safflower, other oilseeds",0.23699421965317916,"Scarlat, Martinov & Dallemand 2010",log,0.452,3.2189,fresh,0.873
